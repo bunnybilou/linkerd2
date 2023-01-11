@@ -23,8 +23,12 @@ gateway:
     seconds: 3
   # -- Annotations to add to the gateway service
   serviceAnnotations: {}
+  # -- Annotations to add to the gateway deployment
+  deploymentAnnotations: {}
   # -- Set loadBalancerIP on gateway service
   loadBalancerIP: ""
+  # -- Set terminationGracePeriodSeconds on gateway deployment
+  terminationGracePeriodSeconds: ""
 
   # -- User id under which the gateway shall be ran
   UID: 2103
